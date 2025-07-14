@@ -1,11 +1,29 @@
-# Project
-## About the project
+#  SQL Project: European Data Jobs
+## -- Table of Contents -- 
+- About the Project
+- Tools and Data
+- Analysis
+- Conclusion
+
+## -- About the project-- 
 
 **Goal**
-- You are an aspiring data nerd looking to analyze the top-paying roles and skills.
-- You will create an SQL queries to explore this large dataset specific to you
-- For those job searching or looking for a promotion; you can not oly use this project to showcase experience BUT also to extract what roles / skills you should target.
+- To identify what non-senior data jobs are available.
+- Identify what skills would be useful for someone looking to get into the industry.
+- Estimate the average salary for different positions and skills.
 
-To make this more relevant to me, i will only focus on non senior roles - as i am new in the industry - and i will only focus on jobs in Europe (with extra focus on Denmark).
+To answer these questions, 4 queries are used (5 if you include create a new table - but that is an optional step):
+1. Query to identify top 10 best paying non-senior data jobs in Europe.
+2. Query to identify what skills these top 10 jobs require.
+3. Query to identify what skills are the most sought after.
+4. Query to identify what the average yearly salary is by skill.
+
+The queries used in this project can be found in this folder: [european_data_jobs_project](/european_data_jobs_project/)
+
+## -- Tools and Data --
 
 
+## -- Analysis --
+
+
+## -- Conclusion --
