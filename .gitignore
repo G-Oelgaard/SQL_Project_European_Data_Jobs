@@ -8,4 +8,7 @@
 /SQLiteViz_invoices_DB.url
 /SQLiteViz_jobs_DB.url
 /sql_course.session.sql
-/creating_database/csv_files/
+/creating_database/csv_files/company_dim.csv
+/creating_database/csv_files/job_postings_fact.csv
+/creating_database/csv_files/skills_dim.csv
+/creating_database/csv_files/skills_job_dim.csv
