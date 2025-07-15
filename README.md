@@ -309,6 +309,10 @@ ORDER BY
 
 ![Bar plot showing the countries with the most job above average salaried job openings (by height and color)](/images/top_paying_jobs_country.jpg)
 
+*Note: This analysis only includes job listings that explicitly specified a salary. For the insights above to apply to the entire dataset, these specified job openings would need to be representative of listings without salary information.*
+
+NOTE: 
+
 ## --- Conclusion ---
 ### Key insights
 The goal of this project was to explore non-senior data job openings in Europe to better understand the types of roles available, the most in-demand skills, and the expected salary ranges. Through a series of SQL queries and analyses, several key insights emerged:
