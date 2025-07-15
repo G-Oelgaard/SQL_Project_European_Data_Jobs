@@ -31,35 +31,10 @@ LIMIT 10;
 -- The non-limited data is 1,765 rows long. Meaning that only 1,765 out of the 288,420 jobs in the table match our search requirements - ca. 0.6 %.
 Using a "EXPLAIN ANALYZE" at the start of the query, we can also see the time to run the query (if not limited) would be ca. 39 ms.
 
-From the query, we can conclude that the most best paid jobs are found in Eastern Europe, followed by central and western europe.
-However, while it is true that the best paid jobs are in Eastern Europe, if we look beyond the top 10 best paid jobs, the vast
-majority of well paid data jobs are found in central europe - especially in Germany. We can confirm this using the query below.
+From the query, we can conclude that the best paid jobs are found in Eastern Europe, followed by central and western europe.
+To test whether this is representative for the european market as a whole, see query 6 ("6_above_avg_salary_jobs_country.sql").
 
 The query above also tells us that a a not inconsequential part of the best paid jobs are actually as Data Engineers.
 */
 
--- Checking how many jobs that pay above the average salary exist pr. country using a CTE.
-WITH jobs_by_country AS (
-    SELECT
-        job_title_short,
-        job_country AS country,
-        salary_year_avg
-    FROM
-        euro_jobs
-    WHERE
-        job_title_short NOT LIKE '%Senior%' AND
-        salary_year_avg IS NOT NULL 
-)
-
-SELECT
-    country,
-    COUNT(*) AS jobs_above_mean
-FROM
-    jobs_by_country
-WHERE
-    salary_year_avg > (SELECT AVG(salary_year_avg) FROM jobs_by_country)
-GROUP BY
-    country
-ORDER BY
-    jobs_above_mean DESC;
 

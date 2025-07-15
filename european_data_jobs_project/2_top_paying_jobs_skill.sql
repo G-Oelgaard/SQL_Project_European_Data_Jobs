@@ -27,7 +27,8 @@ SELECT
     name AS company_name,
     job_country AS country,
     salary_year_avg,
-    skills AS skill_name
+    skills AS skill_name,
+    type AS skill_type
 FROM
     top_jobs
 INNER JOIN
@@ -37,8 +38,8 @@ INNER JOIN
 
 /*
 Using this query we can now conclude that the most in demand skills are:
-- Python(x4): confirming its importance in data roles.
-- SQL (x4): showing database skills are in high demand (yay!).
+- Python(x5): confirming its importance in data roles.
+- SQL (x5): showing database skills are in high demand (yay!).
 - Spark (x4) and AWS (x3): highlights the importance of big data processing and cloud platforms
 
 Occurrences of other skills like Git also showcase that version control tools are relevant in the industry.
@@ -51,7 +52,8 @@ The results of the query were as follows:
     "company_name": "ЛАНИТ",
     "country": "Belarus",
     "salary_year_avg": "400000.0",
-    "skill_name": "oracle"
+    "skill_name": "oracle",
+    "skill_type": "cloud"
   },
   {
     "job_id": 209315,
@@ -59,7 +61,8 @@ The results of the query were as follows:
     "company_name": "ЛАНИТ",
     "country": "Belarus",
     "salary_year_avg": "400000.0",
-    "skill_name": "kafka"
+    "skill_name": "kafka",
+    "skill_type": "libraries"
   },
   {
     "job_id": 209315,
@@ -67,7 +70,8 @@ The results of the query were as follows:
     "company_name": "ЛАНИТ",
     "country": "Belarus",
     "salary_year_avg": "400000.0",
-    "skill_name": "linux"
+    "skill_name": "linux",
+    "skill_type": "os"
   },
   {
     "job_id": 209315,
@@ -75,7 +79,8 @@ The results of the query were as follows:
     "company_name": "ЛАНИТ",
     "country": "Belarus",
     "salary_year_avg": "400000.0",
-    "skill_name": "git"
+    "skill_name": "git",
+    "skill_type": "other"
   },
   {
     "job_id": 209315,
@@ -83,7 +88,8 @@ The results of the query were as follows:
     "company_name": "ЛАНИТ",
     "country": "Belarus",
     "salary_year_avg": "400000.0",
-    "skill_name": "svn"
+    "skill_name": "svn",
+    "skill_type": "other"
   },
   {
     "job_id": 656277,
@@ -91,7 +97,8 @@ The results of the query were as follows:
     "company_name": "SWS",
     "country": "Russia",
     "salary_year_avg": "320000.0",
-    "skill_name": "sql"
+    "skill_name": "sql",
+    "skill_type": "programming"
   },
   {
     "job_id": 656277,
@@ -99,7 +106,8 @@ The results of the query were as follows:
     "company_name": "SWS",
     "country": "Russia",
     "salary_year_avg": "320000.0",
-    "skill_name": "python"
+    "skill_name": "python",
+    "skill_type": "programming"
   },
   {
     "job_id": 656277,
@@ -107,7 +115,8 @@ The results of the query were as follows:
     "company_name": "SWS",
     "country": "Russia",
     "salary_year_avg": "320000.0",
-    "skill_name": "pytorch"
+    "skill_name": "pytorch",
+    "skill_type": "libraries"
   },
   {
     "job_id": 656277,
@@ -115,7 +124,8 @@ The results of the query were as follows:
     "company_name": "SWS",
     "country": "Russia",
     "salary_year_avg": "320000.0",
-    "skill_name": "opencv"
+    "skill_name": "opencv",
+    "skill_type": "libraries"
   },
   {
     "job_id": 28572,
@@ -123,7 +133,8 @@ The results of the query were as follows:
     "company_name": "Технологическая компания",
     "country": "Russia",
     "salary_year_avg": "280000.0",
-    "skill_name": "sql"
+    "skill_name": "sql",
+    "skill_type": "programming"
   },
   {
     "job_id": 172709,
@@ -131,7 +142,8 @@ The results of the query were as follows:
     "company_name": "DevHunt",
     "country": "Russia",
     "salary_year_avg": "250000.0",
-    "skill_name": "sql"
+    "skill_name": "sql",
+    "skill_type": "programming"
   },
   {
     "job_id": 172709,
@@ -139,7 +151,8 @@ The results of the query were as follows:
     "company_name": "DevHunt",
     "country": "Russia",
     "salary_year_avg": "250000.0",
-    "skill_name": "python"
+    "skill_name": "python",
+    "skill_type": "programming"
   },
   {
     "job_id": 172709,
@@ -147,7 +160,8 @@ The results of the query were as follows:
     "company_name": "DevHunt",
     "country": "Russia",
     "salary_year_avg": "250000.0",
-    "skill_name": "postgresql"
+    "skill_name": "postgresql",
+    "skill_type": "databases"
   },
   {
     "job_id": 172709,
@@ -155,7 +169,8 @@ The results of the query were as follows:
     "company_name": "DevHunt",
     "country": "Russia",
     "salary_year_avg": "250000.0",
-    "skill_name": "oracle"
+    "skill_name": "oracle",
+    "skill_type": "cloud"
   },
   {
     "job_id": 172709,
@@ -163,7 +178,8 @@ The results of the query were as follows:
     "company_name": "DevHunt",
     "country": "Russia",
     "salary_year_avg": "250000.0",
-    "skill_name": "pandas"
+    "skill_name": "pandas",
+    "skill_type": "libraries"
   },
   {
     "job_id": 172709,
@@ -171,7 +187,8 @@ The results of the query were as follows:
     "company_name": "DevHunt",
     "country": "Russia",
     "salary_year_avg": "250000.0",
-    "skill_name": "numpy"
+    "skill_name": "numpy",
+    "skill_type": "libraries"
   },
   {
     "job_id": 172709,
@@ -179,7 +196,8 @@ The results of the query were as follows:
     "company_name": "DevHunt",
     "country": "Russia",
     "salary_year_avg": "250000.0",
-    "skill_name": "scikit-learn"
+    "skill_name": "scikit-learn",
+    "skill_type": "libraries"
   },
   {
     "job_id": 172709,
@@ -187,7 +205,8 @@ The results of the query were as follows:
     "company_name": "DevHunt",
     "country": "Russia",
     "salary_year_avg": "250000.0",
-    "skill_name": "git"
+    "skill_name": "git",
+    "skill_type": "other"
   },
   {
     "job_id": 371551,
@@ -195,7 +214,8 @@ The results of the query were as follows:
     "company_name": "H&M Group",
     "country": "Sweden",
     "salary_year_avg": "249000.0",
-    "skill_name": "python"
+    "skill_name": "python",
+    "skill_type": "programming"
   },
   {
     "job_id": 371551,
@@ -203,7 +223,8 @@ The results of the query were as follows:
     "company_name": "H&M Group",
     "country": "Sweden",
     "salary_year_avg": "249000.0",
-    "skill_name": "bash"
+    "skill_name": "bash",
+    "skill_type": "programming"
   },
   {
     "job_id": 371551,
@@ -211,7 +232,8 @@ The results of the query were as follows:
     "company_name": "H&M Group",
     "country": "Sweden",
     "salary_year_avg": "249000.0",
-    "skill_name": "azure"
+    "skill_name": "azure",
+    "skill_type": "cloud"
   },
   {
     "job_id": 371551,
@@ -219,7 +241,8 @@ The results of the query were as follows:
     "company_name": "H&M Group",
     "country": "Sweden",
     "salary_year_avg": "249000.0",
-    "skill_name": "spark"
+    "skill_name": "spark",
+    "skill_type": "libraries"
   },
   {
     "job_id": 1540095,
@@ -227,7 +250,8 @@ The results of the query were as follows:
     "company_name": "Etsy",
     "country": "United Kingdom",
     "salary_year_avg": "249000.0",
-    "skill_name": "go"
+    "skill_name": "go",
+    "skill_type": "programming"
   },
   {
     "job_id": 1717028,
@@ -235,7 +259,8 @@ The results of the query were as follows:
     "company_name": "TripAdvisor",
     "country": "France",
     "salary_year_avg": "249000.0",
-    "skill_name": "nosql"
+    "skill_name": "nosql",
+    "skill_type": "programming"
   },
   {
     "job_id": 1717028,
@@ -243,7 +268,8 @@ The results of the query were as follows:
     "company_name": "TripAdvisor",
     "country": "France",
     "salary_year_avg": "249000.0",
-    "skill_name": "go"
+    "skill_name": "go",
+    "skill_type": "programming"
   },
   {
     "job_id": 1717028,
@@ -251,7 +277,8 @@ The results of the query were as follows:
     "company_name": "TripAdvisor",
     "country": "France",
     "salary_year_avg": "249000.0",
-    "skill_name": "aws"
+    "skill_name": "aws",
+    "skill_type": "cloud"
   },
   {
     "job_id": 1717028,
@@ -259,7 +286,8 @@ The results of the query were as follows:
     "company_name": "TripAdvisor",
     "country": "France",
     "salary_year_avg": "249000.0",
-    "skill_name": "snowflake"
+    "skill_name": "snowflake",
+    "skill_type": "cloud"
   },
   {
     "job_id": 1717028,
@@ -267,7 +295,8 @@ The results of the query were as follows:
     "company_name": "TripAdvisor",
     "country": "France",
     "salary_year_avg": "249000.0",
-    "skill_name": "spark"
+    "skill_name": "spark",
+    "skill_type": "libraries"
   },
   {
     "job_id": 1717028,
@@ -275,7 +304,8 @@ The results of the query were as follows:
     "company_name": "TripAdvisor",
     "country": "France",
     "salary_year_avg": "249000.0",
-    "skill_name": "airflow"
+    "skill_name": "airflow",
+    "skill_type": "libraries"
   },
   {
     "job_id": 1717028,
@@ -283,7 +313,8 @@ The results of the query were as follows:
     "company_name": "TripAdvisor",
     "country": "France",
     "salary_year_avg": "249000.0",
-    "skill_name": "hadoop"
+    "skill_name": "hadoop",
+    "skill_type": "libraries"
   },
   {
     "job_id": 1717028,
@@ -291,7 +322,8 @@ The results of the query were as follows:
     "company_name": "TripAdvisor",
     "country": "France",
     "salary_year_avg": "249000.0",
-    "skill_name": "kubernetes"
+    "skill_name": "kubernetes",
+    "skill_type": "other"
   },
   {
     "job_id": 456144,
@@ -299,7 +331,8 @@ The results of the query were as follows:
     "company_name": "LTK",
     "country": "France",
     "salary_year_avg": "235000.0",
-    "skill_name": "sql"
+    "skill_name": "sql",
+    "skill_type": "programming"
   },
   {
     "job_id": 456144,
@@ -307,7 +340,8 @@ The results of the query were as follows:
     "company_name": "LTK",
     "country": "France",
     "salary_year_avg": "235000.0",
-    "skill_name": "python"
+    "skill_name": "python",
+    "skill_type": "programming"
   },
   {
     "job_id": 456144,
@@ -315,7 +349,8 @@ The results of the query were as follows:
     "company_name": "LTK",
     "country": "France",
     "salary_year_avg": "235000.0",
-    "skill_name": "scala"
+    "skill_name": "scala",
+    "skill_type": "programming"
   },
   {
     "job_id": 456144,
@@ -323,7 +358,8 @@ The results of the query were as follows:
     "company_name": "LTK",
     "country": "France",
     "salary_year_avg": "235000.0",
-    "skill_name": "r"
+    "skill_name": "r",
+    "skill_type": "programming"
   },
   {
     "job_id": 456144,
@@ -331,7 +367,8 @@ The results of the query were as follows:
     "company_name": "LTK",
     "country": "France",
     "salary_year_avg": "235000.0",
-    "skill_name": "golang"
+    "skill_name": "golang",
+    "skill_type": "programming"
   },
   {
     "job_id": 456144,
@@ -339,7 +376,8 @@ The results of the query were as follows:
     "company_name": "LTK",
     "country": "France",
     "salary_year_avg": "235000.0",
-    "skill_name": "aws"
+    "skill_name": "aws",
+    "skill_type": "cloud"
   },
   {
     "job_id": 456144,
@@ -347,7 +385,8 @@ The results of the query were as follows:
     "company_name": "LTK",
     "country": "France",
     "salary_year_avg": "235000.0",
-    "skill_name": "redshift"
+    "skill_name": "redshift",
+    "skill_type": "cloud"
   },
   {
     "job_id": 456144,
@@ -355,7 +394,8 @@ The results of the query were as follows:
     "company_name": "LTK",
     "country": "France",
     "salary_year_avg": "235000.0",
-    "skill_name": "spark"
+    "skill_name": "spark",
+    "skill_type": "libraries"
   },
   {
     "job_id": 456144,
@@ -363,7 +403,8 @@ The results of the query were as follows:
     "company_name": "LTK",
     "country": "France",
     "salary_year_avg": "235000.0",
-    "skill_name": "kafka"
+    "skill_name": "kafka",
+    "skill_type": "libraries"
   },
   {
     "job_id": 205802,
@@ -371,7 +412,8 @@ The results of the query were as follows:
     "company_name": "Beam Suntory",
     "country": "Spain",
     "salary_year_avg": "225000.0",
-    "skill_name": "sql"
+    "skill_name": "sql",
+    "skill_type": "programming"
   },
   {
     "job_id": 205802,
@@ -379,7 +421,8 @@ The results of the query were as follows:
     "company_name": "Beam Suntory",
     "country": "Spain",
     "salary_year_avg": "225000.0",
-    "skill_name": "python"
+    "skill_name": "python",
+    "skill_type": "programming"
   },
   {
     "job_id": 205802,
@@ -387,7 +430,8 @@ The results of the query were as follows:
     "company_name": "Beam Suntory",
     "country": "Spain",
     "salary_year_avg": "225000.0",
-    "skill_name": "nosql"
+    "skill_name": "nosql",
+    "skill_type": "programming"
   },
   {
     "job_id": 205802,
@@ -395,7 +439,8 @@ The results of the query were as follows:
     "company_name": "Beam Suntory",
     "country": "Spain",
     "salary_year_avg": "225000.0",
-    "skill_name": "scala"
+    "skill_name": "scala",
+    "skill_type": "programming"
   },
   {
     "job_id": 205802,
@@ -403,7 +448,8 @@ The results of the query were as follows:
     "company_name": "Beam Suntory",
     "country": "Spain",
     "salary_year_avg": "225000.0",
-    "skill_name": "java"
+    "skill_name": "java",
+    "skill_type": "programming"
   },
   {
     "job_id": 205802,
@@ -411,7 +457,8 @@ The results of the query were as follows:
     "company_name": "Beam Suntory",
     "country": "Spain",
     "salary_year_avg": "225000.0",
-    "skill_name": "mysql"
+    "skill_name": "mysql",
+    "skill_type": "databases"
   },
   {
     "job_id": 205802,
@@ -419,7 +466,8 @@ The results of the query were as follows:
     "company_name": "Beam Suntory",
     "country": "Spain",
     "salary_year_avg": "225000.0",
-    "skill_name": "postgresql"
+    "skill_name": "postgresql",
+    "skill_type": "databases"
   },
   {
     "job_id": 205802,
@@ -427,7 +475,8 @@ The results of the query were as follows:
     "company_name": "Beam Suntory",
     "country": "Spain",
     "salary_year_avg": "225000.0",
-    "skill_name": "azure"
+    "skill_name": "azure",
+    "skill_type": "cloud"
   },
   {
     "job_id": 205802,
@@ -435,7 +484,8 @@ The results of the query were as follows:
     "company_name": "Beam Suntory",
     "country": "Spain",
     "salary_year_avg": "225000.0",
-    "skill_name": "aws"
+    "skill_name": "aws",
+    "skill_type": "cloud"
   },
   {
     "job_id": 205802,
@@ -443,7 +493,8 @@ The results of the query were as follows:
     "company_name": "Beam Suntory",
     "country": "Spain",
     "salary_year_avg": "225000.0",
-    "skill_name": "spark"
+    "skill_name": "spark",
+    "skill_type": "libraries"
   },
   {
     "job_id": 205802,
@@ -451,7 +502,8 @@ The results of the query were as follows:
     "company_name": "Beam Suntory",
     "country": "Spain",
     "salary_year_avg": "225000.0",
-    "skill_name": "airflow"
+    "skill_name": "airflow",
+    "skill_type": "libraries"
   },
   {
     "job_id": 205802,
@@ -459,7 +511,8 @@ The results of the query were as follows:
     "company_name": "Beam Suntory",
     "country": "Spain",
     "salary_year_avg": "225000.0",
-    "skill_name": "sap"
+    "skill_name": "sap",
+    "skill_type": "analyst_tools"
   }
 ]
 */

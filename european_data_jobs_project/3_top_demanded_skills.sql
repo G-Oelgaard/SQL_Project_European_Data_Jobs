@@ -10,6 +10,7 @@ NOTE: non-senior jobs that do not have a listed salary *ARE* included in the fol
 
 SELECT
     skills AS skill_name,
+    type AS skill_type,
     COUNT(*) AS total_jobs
 FROM
     euro_jobs
@@ -20,7 +21,8 @@ INNER JOIN
 WHERE
     job_title_short NOT LIKE '%Senior%'
 GROUP BY
-    skill_name
+    skill_name,
+    skill_type
 ORDER BY
     total_jobs DESC
 LIMIT 10;
